@@ -82,6 +82,79 @@
             font-size: 0.9rem;
         }
         
+        /* Mobile Header Fixes - Better visibility */
+        @media (max-width: 768px) {
+            nav {
+                padding: 0.75rem 0;
+            }
+            
+            .logo {
+                font-size: 1.4rem;
+            }
+            
+            .nav-links {
+                gap: 1rem;
+            }
+            
+            .nav-links a {
+                font-size: 0.8rem;
+            }
+            
+            .cta-button {
+                padding: 0.4rem 0.8rem;
+                font-size: 0.75rem;
+                white-space: nowrap;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            nav {
+                padding: 0.5rem 0;
+            }
+            
+            .logo {
+                font-size: 1.2rem;
+            }
+            
+            .nav-links {
+                gap: 0.75rem;
+            }
+            
+            .nav-links a {
+                font-size: 0.7rem;
+            }
+            
+            .cta-button {
+                padding: 0.3rem 0.6rem;
+                font-size: 0.65rem;
+                white-space: nowrap;
+            }
+        }
+        
+        @media (max-width: 360px) {
+            nav {
+                padding: 0.4rem 0;
+            }
+            
+            .logo {
+                font-size: 1.1rem;
+            }
+            
+            .nav-links {
+                gap: 0.5rem;
+            }
+            
+            .nav-links a {
+                font-size: 0.65rem;
+            }
+            
+            .cta-button {
+                padding: 0.25rem 0.5rem;
+                font-size: 0.6rem;
+                white-space: nowrap;
+            }
+        }
+        
         .cta-button:hover {
             background: #e67e00;
             transform: translateY(-1px);
@@ -104,7 +177,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: rgba(0, 0, 0, 0.6);
+            background: rgba(0, 0, 0, 0.7);
             z-index: 1;
         }
         
@@ -538,278 +611,6 @@
             font-size: 0.9rem;
         }
         
-        /* Responsive Design */
-        @media (max-width: 1024px) {
-            .hero-content,
-            .settings-content,
-            .about-content {
-                grid-template-columns: 1fr;
-                gap: 3rem;
-            }
-            
-            .nav-links {
-                display: none;
-            }
-            
-            .benefits-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .hero-buttons {
-                flex-direction: column;
-                align-items: flex-start;
-                gap: 1rem;
-            }
-            
-            .features-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .hero-info {
-                gap: 1.5rem;
-            }
-            
-            .info-card {
-                padding: 1.5rem;
-            }
-        }
-        
-        @media (max-width: 768px) {
-            .container {
-                padding: 0 20px;
-            }
-            
-            .hero-text h1 {
-                font-size: 2.5rem;
-                line-height: 1.1;
-            }
-            
-            .hero-text .subtitle {
-                font-size: 1.1rem;
-                margin-bottom: 2rem;
-            }
-            
-            .section-header h2 {
-                font-size: 2rem;
-            }
-            
-            .section-header p {
-                font-size: 1rem;
-            }
-            
-            .feature-card,
-            .benefit-item {
-                padding: 2rem 1.5rem;
-            }
-            
-            .setting-item {
-                padding: 1.25rem;
-            }
-            
-            .hero-content {
-                gap: 3rem;
-                padding: 4rem 0;
-            }
-            
-            .hero-buttons {
-                width: 100%;
-            }
-            
-            .btn-primary,
-            .btn-secondary {
-                width: 100%;
-                text-align: center;
-                padding: 1rem 1.5rem;
-            }
-            
-            .info-card h3 {
-                font-size: 0.85rem;
-            }
-            
-            .info-card p {
-                font-size: 1rem;
-            }
-            
-            .product-showcase {
-                height: 300px;
-            }
-            
-            .settings-content {
-                gap: 3rem;
-            }
-            
-            .about-content {
-                gap: 3rem;
-            }
-            
-            .about-image img {
-                max-height: 300px;
-            }
-        }
-        
-        @media (max-width: 480px) {
-            .container {
-                padding: 0 16px;
-            }
-            
-            .hero-text h1 {
-                font-size: 2rem;
-                line-height: 1.1;
-            }
-            
-            .hero-text .subtitle {
-                font-size: 1rem;
-                margin-bottom: 1.5rem;
-            }
-            
-            .section-header h2 {
-                font-size: 1.75rem;
-            }
-            
-            .section-header p {
-                font-size: 0.95rem;
-            }
-            
-            .hero-content {
-                gap: 2rem;
-                padding: 3rem 0;
-            }
-            
-            .hero-info {
-                gap: 1rem;
-            }
-            
-            .info-card {
-                padding: 1.25rem;
-            }
-            
-            .info-card h3 {
-                font-size: 0.8rem;
-            }
-            
-            .info-card p {
-                font-size: 0.95rem;
-            }
-            
-            .feature-card,
-            .benefit-item {
-                padding: 1.5rem 1.25rem;
-            }
-            
-            .setting-item {
-                padding: 1rem;
-            }
-            
-            .setting-item h4 {
-                font-size: 1rem;
-            }
-            
-            .setting-item p {
-                font-size: 0.9rem;
-            }
-            
-            .product-showcase {
-                height: 250px;
-            }
-            
-            .settings-content {
-                gap: 2rem;
-            }
-            
-            .about-content {
-                gap: 2rem;
-            }
-            
-            .about-image img {
-                max-height: 250px;
-            }
-            
-            .btn-primary,
-            .btn-secondary {
-                padding: 0.875rem 1.25rem;
-                font-size: 0.95rem;
-            }
-            
-            .nav {
-                padding: 1rem 0;
-            }
-            
-            .logo {
-                font-size: 1.5rem;
-            }
-            
-            .cta-button {
-                padding: 0.625rem 1.25rem;
-                font-size: 0.85rem;
-            }
-        }
-        
-        @media (max-width: 360px) {
-            .container {
-                padding: 0 12px;
-            }
-            
-            .hero-text h1 {
-                font-size: 1.75rem;
-            }
-            
-            .hero-text .subtitle {
-                font-size: 0.95rem;
-            }
-            
-            .section-header h2 {
-                font-size: 1.5rem;
-            }
-            
-            .info-card {
-                padding: 1rem;
-            }
-            
-            .info-card h3 {
-                font-size: 0.75rem;
-            }
-            
-            .info-card p {
-                font-size: 0.9rem;
-            }
-            
-            .feature-card,
-            .benefit-item {
-                padding: 1.25rem 1rem;
-            }
-            
-            .setting-item {
-                padding: 0.875rem;
-            }
-            
-            .product-showcase {
-                height: 200px;
-            }
-            
-            .about-image img {
-                max-height: 200px;
-            }
-        }
-        
-        /* Ensure smooth transitions on all interactive elements */
-        * {
-            transition: all 0.3s ease;
-        }
-        
-        /* Improve touch targets on mobile */
-        @media (max-width: 768px) {
-            .nav-links a,
-            .cta-button,
-            .btn-primary,
-            .btn-secondary,
-            .setting-item {
-                min-height: 44px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-        }
-        
         /* Animations */
         .fade-in {
             opacity: 0;
@@ -832,6 +633,872 @@
         /* Smooth scrolling */
         html {
             scroll-behavior: smooth;
+        }
+
+        /* Mobile Video and Image Optimizations */
+        @media (max-width: 768px) {
+            /* Video optimizations for mobile */
+            .setting-video {
+                margin-bottom: 1rem;
+                padding: 1rem;
+            }
+            
+            .setting-video video {
+                width: 100%;
+                height: auto;
+                aspect-ratio: 16/9;
+                border-radius: 8px;
+                background: #000000;
+                max-height: 60vh; /* Prevent videos from being too tall */
+            }
+            
+            .setting-video h4 {
+                font-size: 1.1rem;
+                margin-bottom: 0.75rem;
+            }
+            
+            .setting-video p {
+                font-size: 0.9rem;
+                margin-top: 0.5rem;
+            }
+            
+            /* Product showcase optimizations */
+            .product-showcase {
+                height: 250px;
+                margin-bottom: 1rem;
+                border-radius: 12px;
+            }
+            
+            .product-showcase img {
+                width: 95%;
+                height: 95%;
+                object-fit: contain;
+                border-radius: 8px;
+            }
+            
+            /* Settings list mobile optimization */
+            .settings-list {
+                gap: 0.75rem;
+            }
+            
+            .setting-item {
+                padding: 1.25rem;
+                border-radius: 8px;
+                cursor: pointer;
+                transition: all 0.3s ease;
+            }
+            
+            .setting-item:active {
+                transform: scale(0.98);
+                background: rgba(255, 147, 0, 0.15);
+            }
+            
+            .setting-number {
+                width: 35px;
+                height: 35px;
+                font-size: 1rem;
+                margin-right: 1rem;
+            }
+            
+            .setting-item h4 {
+                font-size: 1.1rem;
+                margin-bottom: 0.5rem;
+            }
+            
+            .setting-item p {
+                font-size: 0.95rem;
+                line-height: 1.5;
+            }
+            
+            /* Hero image mobile optimization - Remove duplicate background */
+            .hero::before {
+                background: rgba(0, 0, 0, 0.7);
+                opacity: 0.8;
+            }
+            
+            /* Info cards mobile optimization */
+            .info-card {
+                padding: 1.5rem;
+                border-radius: 12px;
+            }
+            
+            .info-card h3 {
+                font-size: 0.9rem;
+                margin-bottom: 0.5rem;
+            }
+            
+            .info-card p {
+                font-size: 1rem;
+                line-height: 1.4;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            /* Small mobile video optimizations */
+            .setting-video {
+                padding: 0.75rem;
+                margin-bottom: 0.75rem;
+            }
+            
+            .setting-video video {
+                max-height: 50vh;
+                border-radius: 6px;
+            }
+            
+            .setting-video h4 {
+                font-size: 1rem;
+                margin-bottom: 0.5rem;
+            }
+            
+            .setting-video p {
+                font-size: 0.85rem;
+            }
+            
+            /* Product showcase small mobile */
+            .product-showcase {
+                height: 200px;
+                margin-bottom: 0.75rem;
+            }
+            
+            .product-showcase img {
+                width: 90%;
+                height: 90%;
+            }
+            
+            /* Settings mobile small */
+            .settings-list {
+                gap: 0.5rem;
+            }
+            
+            .setting-item {
+                padding: 1rem;
+                border-radius: 6px;
+            }
+            
+            .setting-number {
+                width: 30px;
+                height: 30px;
+                font-size: 0.9rem;
+                margin-right: 0.75rem;
+            }
+            
+            .setting-item h4 {
+                font-size: 1rem;
+                margin-bottom: 0.25rem;
+            }
+            
+            .setting-item p {
+                font-size: 0.9rem;
+                line-height: 1.4;
+            }
+            
+            /* Hero image small mobile */
+            .hero::before {
+                opacity: 0.15;
+            }
+            
+            /* Info cards small mobile */
+            .info-card {
+                padding: 1.25rem;
+                border-radius: 8px;
+            }
+            
+            .info-card h3 {
+                font-size: 0.8rem;
+            }
+            
+            .info-card p {
+                font-size: 0.95rem;
+            }
+        }
+        
+        @media (max-width: 360px) {
+            /* Extra small mobile video optimizations */
+            .setting-video {
+                padding: 0.5rem;
+                margin-bottom: 0.5rem;
+            }
+            
+            .setting-video video {
+                max-height: 40vh;
+                border-radius: 4px;
+            }
+            
+            .setting-video h4 {
+                font-size: 0.9rem;
+                margin-bottom: 0.25rem;
+            }
+            
+            .setting-video p {
+                font-size: 0.8rem;
+            }
+            
+            /* Product showcase extra small */
+            .product-showcase {
+                height: 150px;
+                margin-bottom: 0.5rem;
+            }
+            
+            .product-showcase img {
+                width: 85%;
+                height: 85%;
+            }
+            
+            /* Settings extra small mobile */
+            .settings-list {
+                gap: 0.375rem;
+            }
+            
+            .setting-item {
+                padding: 0.875rem;
+                border-radius: 4px;
+            }
+            
+            .setting-number {
+                width: 25px;
+                height: 25px;
+                font-size: 0.8rem;
+                margin-right: 0.5rem;
+            }
+            
+            .setting-item h4 {
+                font-size: 0.9rem;
+                margin-bottom: 0.25rem;
+            }
+            
+            .setting-item p {
+                font-size: 0.8rem;
+                line-height: 1.3;
+            }
+            
+            /* Hero image extra small */
+            .hero::before {
+                opacity: 0.1;
+            }
+            
+            /* Info cards extra small */
+            .info-card {
+                padding: 1rem;
+                border-radius: 6px;
+            }
+            
+            .info-card h3 {
+                font-size: 0.75rem;
+            }
+            
+            .info-card p {
+                font-size: 0.9rem;
+            }
+        }
+        
+        /* Touch-friendly improvements for all mobile devices */
+        @media (max-width: 768px) {
+            /* Larger touch targets */
+            .setting-item {
+                min-height: 60px;
+                display: flex;
+                align-items: center;
+            }
+            
+            .btn-primary,
+            .btn-secondary {
+                min-height: 48px;
+                padding: 0.875rem 1.5rem;
+                font-size: 1rem;
+                font-weight: 600;
+            }
+            
+            /* Video controls optimization */
+            .setting-video video::-webkit-media-controls {
+                background-color: rgba(0, 0, 0, 0.8);
+            }
+            
+            .setting-video video::-webkit-media-controls-panel {
+                background-color: rgba(0, 0, 0, 0.8);
+            }
+            
+            /* Better spacing for mobile */
+            .settings-content {
+                gap: 2rem;
+            }
+            
+            .hero-content {
+                gap: 2rem;
+            }
+            
+            /* Improved image loading */
+            .product-showcase img {
+                transition: opacity 0.3s ease;
+            }
+            
+            .product-showcase img[src*="toneguard"] {
+                background: rgba(255, 255, 255, 0.05);
+            }
+        }
+        
+        /* Landscape mobile optimizations */
+        @media (max-width: 768px) and (orientation: landscape) {
+            .setting-video video {
+                max-height: 70vh;
+            }
+            
+            .product-showcase {
+                height: 180px;
+            }
+            
+            .hero-content {
+                gap: 1.5rem;
+                padding: 2rem 0;
+            }
+            
+            .hero-text h1 {
+                font-size: 2rem;
+                margin-bottom: 0.75rem;
+            }
+            
+            .hero-text .subtitle {
+                font-size: 0.9rem;
+                margin-bottom: 1rem;
+            }
+        }
+
+        /* Mobile Layout Redesign - Less Cramped */
+        @media (max-width: 768px) {
+            /* Settings section mobile redesign */
+            .settings-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .settings-text {
+                order: 1;
+            }
+            
+            .settings-image {
+                order: 2;
+            }
+            
+            /* Product showcase mobile optimization */
+            .product-showcase {
+                height: 200px;
+                margin-bottom: 1.5rem;
+                border-radius: 12px;
+            }
+            
+            .product-showcase img {
+                width: 90%;
+                height: 90%;
+                object-fit: contain;
+                border-radius: 8px;
+            }
+            
+            /* Settings list mobile redesign */
+            .settings-list {
+                gap: 1rem;
+                margin-bottom: 2rem;
+            }
+            
+            .setting-item {
+                padding: 1.5rem;
+                border-radius: 12px;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                display: flex;
+                align-items: center;
+                min-height: 70px;
+            }
+            
+            .setting-item:active {
+                transform: scale(0.98);
+                background: rgba(255, 147, 0, 0.15);
+            }
+            
+            .setting-number {
+                width: 40px;
+                height: 40px;
+                font-size: 1.1rem;
+                margin-right: 1.25rem;
+                flex-shrink: 0;
+            }
+            
+            .setting-item h4 {
+                font-size: 1.2rem;
+                margin-bottom: 0.5rem;
+                color: #ffffff;
+            }
+            
+            .setting-item p {
+                font-size: 1rem;
+                line-height: 1.5;
+                color: #cccccc;
+                margin: 0;
+            }
+            
+            /* Video section mobile redesign */
+            .settings-videos {
+                margin-top: 1.5rem;
+            }
+            
+            .setting-video {
+                margin-bottom: 1.5rem;
+                padding: 1.5rem;
+                border-radius: 12px;
+            }
+            
+            .setting-video h4 {
+                font-size: 1.2rem;
+                margin-bottom: 1rem;
+                text-align: center;
+                color: #ffffff;
+            }
+            
+            .setting-video video {
+                width: 100%;
+                height: auto;
+                aspect-ratio: 16/9;
+                border-radius: 8px;
+                background: #000000;
+                max-height: 50vh;
+            }
+            
+            .setting-video p {
+                font-size: 1rem;
+                margin-top: 0.75rem;
+                text-align: center;
+                color: #cccccc;
+            }
+            
+            /* Hero section mobile redesign - Clean and focused */
+            .hero-content {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+                padding: 1.5rem 0;
+            }
+            
+            .hero-text {
+                order: 1;
+                text-align: center;
+            }
+            
+
+            
+            .hero-text h1 {
+                font-size: 1.75rem;
+                line-height: 1.1;
+                margin-bottom: 0.5rem;
+                color: #ffffff;
+                text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+            }
+            
+            .hero-text .subtitle {
+                font-size: 0.8rem;
+                margin-bottom: 1rem;
+                line-height: 1.2;
+                color: #ffffff;
+                text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+                background: rgba(0, 0, 0, 0.7);
+                padding: 0.4rem 0.8rem;
+                border-radius: 3px;
+                display: inline-block;
+            }
+            
+            .hero-buttons {
+                flex-direction: column;
+                gap: 0.4rem;
+                align-items: center;
+            }
+            
+            .btn-primary,
+            .btn-secondary {
+                width: 100%;
+                max-width: 180px;
+                text-align: center;
+                padding: 0.5rem 1rem;
+                font-size: 0.8rem;
+                font-weight: 600;
+            }
+            
+
+            
+            /* About section mobile redesign - Fix cropped photo */
+            .about-content {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+            
+            .about-image {
+                order: 1;
+                text-align: center;
+            }
+            
+            .about-text {
+                order: 2;
+            }
+            
+            .about-image img {
+                max-height: 400px;
+                width: 100%;
+                object-fit: cover;
+                border-radius: 12px;
+                aspect-ratio: 3/4;
+            }
+            
+            .about-text h2 {
+                font-size: 2.2rem;
+                margin-bottom: 2rem;
+                text-align: center;
+            }
+            
+            .about-text p {
+                font-size: 1.1rem;
+                line-height: 1.6;
+                margin-bottom: 1.5rem;
+                text-align: left;
+            }
+            
+            .signature {
+                text-align: center;
+                margin-top: 2.5rem;
+                font-size: 1rem;
+            }
+            
+            /* Hero image mobile optimization - Remove duplicate background */
+            .hero::before {
+                background: rgba(0, 0, 0, 0.7);
+                opacity: 0.8;
+            }
+            
+            /* Section spacing improvements - Less cramped */
+            .features,
+            .settings,
+            .benefits,
+            .about {
+                padding: 4rem 0;
+            }
+            
+            .section-header {
+                margin-bottom: 3rem;
+            }
+            
+            .section-header h2 {
+                font-size: 2.2rem;
+                margin-bottom: 1.5rem;
+            }
+            
+            .section-header p {
+                font-size: 1.1rem;
+                line-height: 1.6;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            /* Small mobile layout improvements - Smaller text */
+            .settings-content {
+                gap: 1.5rem;
+            }
+            
+            .product-showcase {
+                height: 180px;
+                margin-bottom: 1.25rem;
+            }
+            
+            .product-showcase img {
+                width: 85%;
+                height: 85%;
+            }
+            
+            /* Settings list small mobile */
+            .settings-list {
+                gap: 0.75rem;
+                margin-bottom: 1.5rem;
+            }
+            
+            .setting-item {
+                padding: 1.25rem;
+                border-radius: 10px;
+                min-height: 60px;
+            }
+            
+            .setting-number {
+                width: 35px;
+                height: 35px;
+                font-size: 1rem;
+                margin-right: 1rem;
+            }
+            
+            .setting-item h4 {
+                font-size: 1.1rem;
+                margin-bottom: 0.25rem;
+            }
+            
+            .setting-item p {
+                font-size: 0.95rem;
+                line-height: 1.4;
+            }
+            
+            /* Video section small mobile */
+            .settings-videos {
+                margin-top: 1.25rem;
+            }
+            
+            .setting-video {
+                margin-bottom: 1.25rem;
+                padding: 1.25rem;
+                border-radius: 10px;
+            }
+            
+            .setting-video h4 {
+                font-size: 1.1rem;
+                margin-bottom: 0.75rem;
+            }
+            
+            .setting-video video {
+                max-height: 45vh;
+                border-radius: 6px;
+            }
+            
+            .setting-video p {
+                font-size: 0.95rem;
+                margin-top: 0.5rem;
+            }
+            
+            /* Hero section small mobile - Clean and focused */
+            .hero-content {
+                gap: 0.75rem;
+                padding: 1.5rem 0;
+            }
+            
+            .hero-text h1 {
+                font-size: 1.5rem;
+                line-height: 1.1;
+                margin-bottom: 0.4rem;
+                text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+            }
+            
+            .hero-text .subtitle {
+                font-size: 0.7rem;
+                margin-bottom: 0.75rem;
+                line-height: 1.2;
+                background: rgba(0, 0, 0, 0.7);
+                padding: 0.3rem 0.6rem;
+                border-radius: 3px;
+            }
+            
+            .btn-primary,
+            .btn-secondary {
+                padding: 0.4rem 0.8rem;
+                font-size: 0.7rem;
+                max-width: 160px;
+            }
+            
+
+            
+
+            
+            /* About section small mobile - Fix cropped photo */
+            .about-content {
+                gap: 2.5rem;
+            }
+            
+            .about-image img {
+                max-height: 350px;
+                border-radius: 10px;
+                aspect-ratio: 3/4;
+            }
+            
+            .about-text h2 {
+                font-size: 1.9rem;
+                margin-bottom: 1.5rem;
+            }
+            
+            .about-text p {
+                font-size: 1rem;
+                line-height: 1.5;
+                margin-bottom: 1.25rem;
+            }
+            
+            .signature {
+                margin-top: 2rem;
+                font-size: 0.95rem;
+            }
+            
+            /* Hero image small mobile */
+            .hero::before {
+                opacity: 0.15;
+            }
+            
+            /* Section spacing small mobile - Less cramped */
+            .features,
+            .settings,
+            .benefits,
+            .about {
+                padding: 3rem 0;
+            }
+            
+            .section-header {
+                margin-bottom: 2.5rem;
+            }
+            
+            .section-header h2 {
+                font-size: 1.8rem;
+            }
+            
+            .section-header p {
+                font-size: 1rem;
+            }
+        }
+        
+        @media (max-width: 360px) {
+            /* Extra small mobile layout - Smaller text */
+            .settings-content {
+                gap: 1.25rem;
+            }
+            
+            .product-showcase {
+                height: 150px;
+                margin-bottom: 1rem;
+            }
+            
+            .product-showcase img {
+                width: 80%;
+                height: 80%;
+            }
+            
+            /* Settings list extra small */
+            .settings-list {
+                gap: 0.5rem;
+                margin-bottom: 1.25rem;
+            }
+            
+            .setting-item {
+                padding: 1rem;
+                border-radius: 8px;
+                min-height: 55px;
+            }
+            
+            .setting-number {
+                width: 30px;
+                height: 30px;
+                font-size: 0.9rem;
+                margin-right: 0.75rem;
+            }
+            
+            .setting-item h4 {
+                font-size: 1rem;
+                margin-bottom: 0.25rem;
+            }
+            
+            .setting-item p {
+                font-size: 0.9rem;
+                line-height: 1.3;
+            }
+            
+            /* Video section extra small */
+            .settings-videos {
+                margin-top: 1rem;
+            }
+            
+            .setting-video {
+                margin-bottom: 1rem;
+                padding: 1rem;
+                border-radius: 8px;
+            }
+            
+            .setting-video h4 {
+                font-size: 1rem;
+                margin-bottom: 0.5rem;
+            }
+            
+            .setting-video video {
+                max-height: 40vh;
+                border-radius: 4px;
+            }
+            
+            .setting-video p {
+                font-size: 0.85rem;
+                margin-top: 0.5rem;
+            }
+            
+            /* Hero section extra small - Much smaller text */
+            .hero-content {
+                gap: 1rem;
+                padding: 2rem 0;
+            }
+            
+            .hero-text h1 {
+                font-size: 1.5rem;
+                line-height: 1.1;
+                margin-bottom: 0.5rem;
+            }
+            
+            .hero-text .subtitle {
+                font-size: 0.7rem;
+                margin-bottom: 0.75rem;
+                line-height: 1.2;
+            }
+            
+            .btn-primary,
+            .btn-secondary {
+                padding: 0.5rem 1rem;
+                font-size: 0.75rem;
+                max-width: 180px;
+            }
+            
+
+            
+
+            
+            /* About section extra small - Fix cropped photo */
+            .about-content {
+                gap: 2rem;
+            }
+            
+            .about-image img {
+                max-height: 300px;
+                border-radius: 8px;
+                aspect-ratio: 3/4;
+            }
+            
+            .about-text h2 {
+                font-size: 1.6rem;
+                margin-bottom: 1.25rem;
+            }
+            
+            .about-text p {
+                font-size: 0.9rem;
+                line-height: 1.4;
+                margin-bottom: 1rem;
+            }
+            
+            .signature {
+                margin-top: 1.75rem;
+                font-size: 0.9rem;
+            }
+            
+            /* Hero image extra small */
+            .hero::before {
+                opacity: 0.1;
+            }
+            
+            /* Section spacing extra small - Less cramped */
+            .features,
+            .settings,
+            .benefits,
+            .about {
+                padding: 2.5rem 0;
+            }
+            
+            .section-header {
+                margin-bottom: 2rem;
+            }
+            
+            .section-header h2 {
+                font-size: 1.5rem;
+            }
+            
+            .section-header p {
+                font-size: 0.9rem;
+            }
         }
     </style>
 </head>
@@ -862,16 +1529,7 @@
                         <a href="https://forms.gle/t3c7MtowFKjNZ3UG9" target="_blank" class="btn-secondary">Join Waitlist</a>
                     </div>
                 </div>
-                <div class="hero-info">
-                    <div class="info-card fade-in animate-delay-1">
-                        <h3>NO MORE SEPARATE BUZZING</h3>
-                        <p>Practice buzzing applicable to actual playing</p>
-                    </div>
-                    <div class="info-card fade-in animate-delay-2">
-                        <h3>Made by a brass player</h3>
-                        <p>For Brass Players</p>
-                    </div>
-                </div>
+
             </div>
         </div>
     </section>
@@ -1030,13 +1688,7 @@
                     <p>Email: evanshi0826@gmail.com</p>
                     <p>Phone: (832) 388-5479</p>
                 </div>
-                <div class="footer-section">
-                    <h3>For Musicians</h3>
-                    <p><a href="#">Order Toneguard</a></p>
-                    <p><a href="#">Practice Tips</a></p>
-                    <p><a href="#">User Manual</a></p>
-                    <p><a href="#">Support</a></p>
-                </div>
+
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2025 Toneguard. All rights reserved. Designed for passionate brass players.</p>
@@ -1141,5 +1793,4 @@
         });
     </script>
 </body>
-</html>
 </html>
